@@ -3,40 +3,37 @@ import { CheckCircle } from "lucide-react";
 
 const FinalCTASection = () => {
   return (
-    <section id="get-started" className="py-20 bg-gradient-primary">
+    <section id="get-started" className="py-24 lg:py-32 bg-gradient-primary">
       <div className="container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
+        <div className="max-w-4xl mx-auto space-y-10">
+          <h2 className="text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
             Ready to Clear Your Roots?
           </h2>
 
-          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed">
-            Start cleaning your HubSpot CRM today and keep your data reliable.
-            Join hundreds of businesses that trust Clear Roots.
+          <p className="text-xl lg:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+            <span className="block text-3xl lg:text-4xl font-bold text-primary-foreground">Get a free scan + 20 merges free!</span>
+            <span className="block mt-3 text-lg lg:text-xl text-primary-foreground/80">Limited time offer - Start today</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button
-              variant="secondary"
+              variant="accent"
               size="lg"
-              className="text-lg px-8 py-4 bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-button" onClick={() => window.location.href = 'https://app.clearroot.cloud'}
+              className="text-xl px-12 py-6 h-auto shadow-button font-semibold"
+              onClick={() => window.open('https://app.clearroot.cloud/', '_blank')}
             >
-              Get Started Now
+              Start Free Scan
             </Button>
           </div>
 
           {/* Benefits list */}
-          <div className="grid sm:grid-cols-3 gap-6 mt-12 text-primary-foreground/90">
-            <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-primary-foreground" />
-              <span>30-day free trial</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-primary-foreground" />
+          <div className="grid sm:grid-cols-2 gap-8 mt-16 text-primary-foreground/90 max-w-2xl mx-auto text-lg">
+            <div className="flex items-center justify-center space-x-3">
+              <CheckCircle className="w-6 h-6 text-primary-foreground flex-shrink-0" />
               <span>No credit card required</span>
             </div>
-            <div className="flex items-center justify-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-primary-foreground" />
+            <div className="flex items-center justify-center space-x-3">
+              <CheckCircle className="w-6 h-6 text-primary-foreground flex-shrink-0" />
               <span>Setup in under 5 minutes</span>
             </div>
           </div>

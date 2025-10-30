@@ -20,34 +20,34 @@ const PainPointsSection = () => {
   ];
 
   return (
-    <section id="why-clean-data" className="py-20 bg-gradient-section">
+    <section id="why-clean-data" className="py-24 lg:py-32 bg-gradient-section">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Why Clean Data Matters
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Dirty data doesn't just slow you down—it actively hurts your business
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10 lg:gap-12 max-w-6xl mx-auto">
           {painPoints.map((point, index) => (
             <div 
               key={index}
-              className="text-center group hover:scale-105 transition-transform duration-200"
+              className="text-center group hover:scale-105 transition-transform duration-300"
             >
-              <div className="mb-6 flex justify-center">
-                <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center group-hover:bg-destructive/20 transition-colors">
-                  <point.icon className="w-8 h-8 text-destructive" />
+              <div className="mb-8 flex justify-center">
+                <div className="w-20 h-20 lg:w-24 lg:h-24 bg-destructive/10 rounded-full flex items-center justify-center group-hover:bg-destructive/20 transition-colors">
+                  <point.icon className="w-10 h-10 lg:w-12 lg:h-12 text-destructive" />
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold text-foreground mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">
                 {point.title}
               </h3>
               
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 {point.description}
               </p>
             </div>

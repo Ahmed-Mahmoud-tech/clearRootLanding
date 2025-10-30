@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border shadow-sm">
+      <div className="container mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="/lovable-uploads/ce4ea396-a3de-4666-a802-af12747ebab9.png"
+            src="/lovable-uploads/logo_2-05.png"
             alt="Clear Roots"
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
         </div>
 
@@ -28,10 +28,10 @@ const Header = () => {
             Features
           </a>
           <a
-            href="#why-clear-roots"
+            href="#pricing"
             className="text-foreground hover:text-primary transition-colors font-medium"
           >
-            Why Clear Roots
+            Pricing
           </a>
           <a
             href="#get-started"
@@ -42,8 +42,9 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <Button variant="cta" className="px-6 py-2 text-base" onClick={() => window.location.href = 'https://app.clearroot.cloud'}>
-          Start Cleaning My CRM
+        <Button variant="cta" size="lg" className="px-8 text-base font-semibold" onClick={() => window.open('https://app.clearroot.cloud/', '_blank')}
+        >
+          Start Free Scan
         </Button>
       </div>
     </header>
